@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="enregistrement.css">
+    <title>Enregistrement des étudiants</title>
+</head>
+<body>
+    <h1>Enregistrement d'un élève </h1>
+
+    <!--<div class="entrer">
+        <div><label for="nom">Nom</label></div>
+        <div><input class="boutt" type="text" id="nom" name="nom" required></div>
+    </div>
+    
+
+    <div class="entrer">
+        <div> <label for="prenom">Prenom</label></div>
+        <div> <input class="boutt" type="text" id="prenom" name="prenom" required></div>
+    </div>
+     -->
+    <div>
+        <div><label for="nom">Nom</label></div>
+        <div><input class="boutt" type="text" id="nom" name="nom"  placeholder="Votre nom" required></div>
+    </div> 
+
+    <div>
+        <div><label for="prenom">Prénom</label></div>
+        <div><input class="boutt" type="text" id="prenom" name="prenom" placeholder="Votre prenom" required></div>
+    </div>
+
+    <div>
+        <div><label for="matricule">Matricule</label></div>
+        <div><input class="boutt" type="text" id="matricule" name="nom" placeholder="Votre matricule" required></div>
+    
+    </div>
+
+    <div class="entrer">
+        <div> <label for="lieu naissance">Lieu de Naissance</label></div>
+        <div> <input class="boutt" type="text" id="lieu_naissance" name="lieu naissance" required></div> 
+    </div><br>
+
+    
+    <div>
+        <label for="date naissance">Date de Naissance</label>
+        <input type="date" id="lieu_naissance"/>
+        <label for="age">Age</label>
+        <input type="number" id="age" placeholder="Vos années" required>
+    </div> 
+    <div class="entrer">
+        <div><label for="taille">Taille</label></div>
+        <div><input type="number" id="taille" placeholder="Vos cm" required></div>
+    </div>
+
+    <div class="entrer">
+        <div><label for="age">Poids</label></div>
+        <div><input type="number" id="poids" placeholder="Vos kg" required></div>
+    </div>
+
+    <div>
+        <label for="sexe">Sexe</label> <br>
+        <input type="radio" name="sexe" value="femme" id="femme">Femme 
+        <input type="radio" name="sexe" value="homme" id="homme">Homme 
+    </div> <br>
+
+    <div>
+        <div><label for="date">Date du Jour</label></div>
+        <div><input type="date" /></div>
+    </div>
+
+  <p>
+    <label for="parcours">Quel est votre parcours?</label> <br>
+    <select name="parcours" id="parcours">
+        <option value="option"></option>
+        <option value="art numérique">Art Numérique</option>
+        <option value="data science">Data Science</option>
+        <option value="developpement web">Développement Web</option>
+    </select>
+  </p>
+
+<div>
+  <label for="matiere">Matieres</label>
+
+    <select name="matieres" id="matiere">
+        <option value="option"></option>
+        <option value="html 5">HTML 5</option>
+        <option value="css 3">CSS 3</option>
+        <option value="boostrap">Boostrap</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="PHP">PHP</option>
+        <option value="Laravel">Laravel</option>
+        <option value="Node Js">Node JS</option>
+    </select>
+
+    <label for="notes">Notes</label>
+        <input type="number" id="note"/>
+
+        <button id="ajoute">Ajouter</button>
+</div> <br>
+
+<div>
+    <table>
+        <tr>
+           <td>Matières</td>
+           <td>Notes</td>
+           <td>
+            Action
+                <select name="action">
+                    <option value=""></option>
+                    <option value=""><button id="action">Supprimer</button></option>
+                </select>
+           </td>
+        </tr>
+        <tbody id="liste">
+            
+        </tbody>
+    </table>
+</div> <br> <br>
+
+<button id="enregistre" >Enregistrer</button>
+
+<h2>Enregistrement d'un étudiant </h2>
+<div class="tableau">
+    
+    <div><label for="parcours">Parcours</label></div>
+    <div><input class="boutt" type="text" id="parcour" name="parcours" placeholder="Votre parcours" required></div>
+
+    
+</div>
+
+<h2>Zone d'affichage</h2>
+<div>
+    <table id="tableId">
+        <tr id="etudiant">
+           <td>Nom</td>
+           <td>Prénom</td>
+           <td>Matricule</td>
+           <td>Lieu de naissance</td>
+           <td>Parcours</td>
+           <td>Age</td>
+           <td>Poids</td>
+           <td>Taille</td>
+           <td>Sexe</td>
+           <td>
+            Action
+                <!--<select name="action" id="action">
+                    <option value=""></option>
+                    <option value=""> <button>Supprimer</button></option>
+                    <option value=""><button>Ajouter</button></option>
+                    <option value=""><button>Modifier</button></option>
+                </select>-->
+           </td>
+        </tr>
+        <tbody id="liste2">
+            
+        </tbody>
+    </table>
+</div>
+
+
+
+<script src="enregistrement.js"></script>
+</body>
+</html>
